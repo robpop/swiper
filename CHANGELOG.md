@@ -1,5 +1,45 @@
 # Change Log
 
+## [Swiper 5.3.6](https://github.com/nolimits4web/swiper/compare/v5.3.1...v5.3.6) - Released on February 29, 2020
+  * Core
+    * Fixed wrong auto height calculation with `centeredSlides` enabled
+  * Lazy
+    * Now it will update auto height (if enabled) on lazy image loaded (#3466)
+  * Zoom
+    * Fixed issue when previously active slide could be zoomed with `zoom.in()` API (#3451)
+    * Fixed issue when zoom didn't work on `<picture>` element (#3456)
+    * Added support for custom zoom-target element by adding `swiper-zoom-target` class to such elements
+  * Coverflow Effect
+    * `stretch` parameter now can be set in `%` (#3468)
+  * Minor fixes
+
+## [Swiper 5.3.1](https://github.com/nolimits4web/swiper/compare/v5.3.0...v5.3.1) - Released on February 8, 2020
+  * Core
+    * Fixed issue when slider could stuck after last slide (#3414)
+    * Added `label` to list of form events to keep clicks on it (#3407)
+
+## [Swiper 5.3.0](https://github.com/nolimits4web/swiper/compare/v5.2.1...v5.3.0) - Released on January 11, 2020
+  * Core
+    * New `slidesPerGroupSkip` behavior (#3361)
+    * New ratio-based breakpoints (#3389)
+    * Added SCSS interpolation (#3373, #3374)
+  * Mousehweel
+    * Fixed issue when it can fail on load (#3383)
+  * Minor fixes
+
+## [Swiper 5.2.1](https://github.com/nolimits4web/swiper/compare/v5.2.0...v5.2.1) - Released on November 16, 2019
+  * Core
+    * New loop events `beforeLoopFix` and `loopFix`
+    * New parameter `updateOnWindowResize` (by default `true`) that will update/recalc swiper on window resize/orientationchange
+    * Added SCSS interpolation for `--swiper-theme-color` variable when not building from source (#3334)
+    * Quote SCSS color names (#3316)
+    * Fixed issue when `.once` could be called more than once (#3322)
+  * Mousewheel
+    * Fixed scroll wheel unwanted frozen effect (#3328)
+  * Thumbs
+    * New `multipleActiveThumbs` (by default `true`) option to control whether multiple thumbnail slides may get activated or not.
+  * Minor fixes
+
 ## [Swiper 5.2.0](https://github.com/nolimits4web/swiper/compare/v5.1.0...v5.2.0) - Released on October 26, 2019
   * Core
     * New `centeredSlidesBounds` parameter that when enabled will keep first and last slides at bounds
@@ -75,7 +115,7 @@
   * Core
     * Fixed issue when callbacks fires on init even if it disabled (#2807)
     * Fixed issue when "swiper-slide-visible" class name in some situations shows up when it shouldn't
-    * `slidesPerColumFill: 'row'` now considers groups (#3077)
+    * `slidesPerColumnFill: 'row'` now considers groups (#3077)
   * Thumbs
     * Fixes bug 'Cannot read property `indexOf` of undefined' that sometimes occurs on use of thumbnails
   * Keyboard
